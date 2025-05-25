@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.api-section {
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+}
+
+.api-section h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 9px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  background: #f1f3f5;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 13px;
+  white-space: pre-wrap;
+  color: #333;
+  min-height: 40px;
+}
+
+#downloadLink {
+  display: block;
+  margin-top: 8px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}

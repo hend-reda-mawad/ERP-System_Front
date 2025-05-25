@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ERPSystem API Frontend</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>ERPSystem API Frontend</h1>
+<section class="api-section" id="api-upload-file">
+  <h2>Upload File</h2>
+  <input type="file" id="uploadFileInput" />
+  <input type="text" id="uploadTitle" placeholder="Title" />
+  <input type="text" id="uploadDescription" placeholder="Description" />
+  <input type="text" id="uploadTags" placeholder="Tags (comma separated)" />
+  <button id="btnUploadFile">Upload File</button>
+  <pre class="result" id="resUploadFile"></pre>
+</section>
+
+  <section class="api-section" id="api-get-files">
+    <h2>Get Files List</h2>
+    <button id="btnGetFiles">Get Files</button>
+    <pre class="result" id="resGetFiles"></pre>
+  </section>
+
+  <section class="api-section" id="api-create-folder">
+    <h2> Create Folder</h2>
+    <input type="text" id="createFolderName" placeholder="Folder Name" />
+    <input type="text" id="createParentFolderId" placeholder="Parent Folder ID (optional)" />
+    <button id="btnCreateFolder">Create Folder</button>
+    <pre class="result" id="resCreateFolder"></pre>
+  </section>
+
+  <section class="api-section" id="api-get-folder">
+    <h2> Get Folder By ID</h2>
+    <input type="text" id="getFolderId" placeholder="Folder ID" />
+    <button id="btnGetFolder">Get Folder</button>
+    <pre class="result" id="resGetFolder"></pre>
+  </section>
+
+  <section class="api-section" id="api-update-folder">
+    <h2> Update Folder Name</h2>
+    <input type="text" id="updateFolderId" placeholder="Folder ID" />
+    <input type="text" id="updateFolderName" placeholder="New Folder Name" />
+    <button id="btnUpdateFolder">Update Folder</button>
+    <pre class="result" id="resUpdateFolder"></pre>
+  </section>
+
+  <section class="api-section" id="api-delete-folder">
+    <h2>Delete Folder</h2>
+    <input type="text" id="deleteFolderId" placeholder="Folder ID" />
+    <button id="btnDeleteFolder">Delete Folder</button>
+    <pre class="result" id="resDeleteFolder"></pre>
+  </section>
+
+<section class="api-section" id="api-assign-access">
+  <h2>Assign Access</h2>
+  <input type="text" id="assignAccessUserId" placeholder="User ID" />
+  <input type="text" id="assignAccessDocumentId" placeholder="Document ID" />
+  <select id="assignAccessPermissionLevel">
+    <option value="View">View</option>
+    <option value="Edit">Edit</option>
+    <option value="Download">Download</option>
+  </select>
+  <button id="btnAssignAccess">Assign Access</button>
+  <pre class="result" id="resAssignAccess"></pre>
+</section>
+
+
+<section class="api-section" id="api-get-access">
+  <h2>Get Access by Document ID</h2>
+  <input type="text" id="getAccessDocumentId" placeholder="Document ID" />
+  <button id="btnGetAccess">Get Access</button>
+  <pre class="result" id="resGetAccess"></pre>
+</section>
+
+<section class="api-section" id="api-remove-access">
+  <h2>Remove Access</h2>
+  <input type="text" id="removeAccessUserId" placeholder="User ID" />
+  <input type="text" id="removeAccessDocumentId" placeholder="Document ID" />
+  <select id="removeAccessPermissionLevel">
+    <option value="">Select Permission Level</option>
+    <option value="View">View</option>
+    <option value="Edit">Edit</option>
+    <option value="Download">Download</option>
+  </select>
+  <button id="btnRemoveAccess">Remove Access</button>
+  <pre class="result" id="resRemoveAccess"></pre>
+</section>
+ 
+<section class="api-section" id="api-get-tags">
+  <h2>Get Tags</h2>
+  <input type="text" id="getTagsDocumentId" placeholder="Document ID" />
+  <button id="btnGetTags">Get Tags</button>
+  <pre class="result" id="resGetTags"></pre>
+</section>
+
+<section class="api-section" id="api-add-tags">
+  <h2>Add Tags</h2>
+  <input type="text" id="addTagsDocumentId" placeholder="Document ID" />
+  <input type="text" id="addTagsList" placeholder="Tags (comma separated)" />
+  <button id="btnAddTags">Add Tags</button>
+  <pre class="result" id="resAddTags"></pre>
+</section>
+
+<section class="api-section" id="api-update-tags">
+  <h2>Update Tags</h2>
+  <input type="text" id="updateTagsDocumentId" placeholder="Document ID" />
+  <input type="text" id="updateTagsList" placeholder="Tags (comma separated)" />
+  <button id="btnUpdateTags">Update Tags</button>
+  <pre class="result" id="resUpdateTags"></pre>
+</section>
+
+<section class="api-section" id="api-remove-tag">
+  <h2>Remove Tag</h2>
+  <input type="text" id="removeTagDocumentId" placeholder="Document ID" />
+  <input type="text" id="removeTagName" placeholder="Tag to Remove" />
+  <button id="btnRemoveTag">Remove Tag</button>
+  <pre class="result" id="resRemoveTag"></pre>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
