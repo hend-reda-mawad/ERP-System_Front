@@ -1,5 +1,5 @@
-const apiBase = "http://localhost:5278/api";
-
+//const apiBase = "http://localhost:5278/api";
+const apiBase = "http://erp-systemhend.runasp.net/api";
 
 function showResult(id, text) {
   document.getElementById(id).textContent = text;
